@@ -2,7 +2,9 @@
 class Assets {
   Assets._();
 
-  static const String imagesArrowBack = 'assets/images/Arrow_back.svg';
+  static const String imagesArrow = 'assets/images/arrow.svg';
   static const String imagesBasket = 'assets/images/basket.png';
+  static const String imagesCard = 'assets/images/card.svg';
+  static const String imagesPaypal = 'assets/images/paypal.svg';
 
 }

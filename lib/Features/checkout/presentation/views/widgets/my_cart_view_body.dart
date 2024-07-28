@@ -1,3 +1,4 @@
+import 'package:checkout_payment_ui/Features/checkout/presentation/views/payment_details_view.dart';
 import 'package:checkout_payment_ui/Features/checkout/presentation/views/widgets/cart_items.dart';
 import 'package:checkout_payment_ui/Features/checkout/presentation/views/widgets/custom_button.dart';
 import 'package:checkout_payment_ui/Features/checkout/presentation/views/widgets/total.dart';
@@ -38,7 +39,12 @@ class MyCartViewBody extends StatelessWidget {
         const SizedBox(
           height: 16,
         ),
-        const CustomButton(),
+         CustomButton(
+          onPressed: (){
+            Navigator.push(context, MaterialPageRoute(builder: (context) => const PaymentDetailsView(),));
+          },
+           text: 'Complete Payment',
+        ),
         const SizedBox(
           height: 12,
         ),
