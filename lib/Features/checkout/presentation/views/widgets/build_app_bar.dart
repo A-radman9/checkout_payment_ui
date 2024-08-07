@@ -3,11 +3,12 @@ import 'package:checkout_payment_ui/core/utils/assets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-AppBar buildAppBar({required String title}) {
+AppBar buildAppBar({ String? title}) {
   return AppBar(
+    forceMaterialTransparency: true,
     leading: Center(child: SvgPicture.asset(Assets.imagesArrow),),
     title: Text(
-      title,
+      title??'',
       style: AppStyle.styleMedium25,
     ),
     centerTitle: true,
